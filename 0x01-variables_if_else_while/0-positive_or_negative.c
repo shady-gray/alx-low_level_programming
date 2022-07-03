@@ -4,11 +4,9 @@
 
 
 /**
- * program to select random number
+ * main - Entry point
  *
- * check if the number is positive or negative or zero
- *
- * end program if return value is (0)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -18,7 +16,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is Positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	if (n == 0)
 	{
