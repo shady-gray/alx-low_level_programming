@@ -8,9 +8,9 @@
 int main(void)
 {
 int n;
-for (n = 0; n <= 9; n++)
+for (n = 0; n <= a; n++)
 {
-    printf("%d", n);
+	printf("%d", n);
 }
 putchar('\n');
 return (0);
