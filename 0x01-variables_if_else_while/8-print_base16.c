@@ -9,8 +9,8 @@
 int main(void)
 {
 /**
-*
 * hexadecimal
+*
 * 0 1 2 3 4 5 6 7 8 9 a c d e f
 */
 char ch;
