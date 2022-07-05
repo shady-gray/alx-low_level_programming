@@ -2,9 +2,10 @@
 /**
  * main - Entry point
  *
- * Return - void
+ * Return - Always 0 (Success)
  */
-void main()
+int main()
 {
 	printf("_putchar\n");
+return (0);
 }
