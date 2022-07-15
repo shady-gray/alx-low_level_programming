@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strncat -  a function that concatenates a destination string to
@@ -10,15 +11,22 @@
  * Return: Always 0.
  */
 
-char *_strncat(char *dest, char *src, int n)
-{
-	int len1 = 0, index = 0;
+char* _strcat(char *dest, const char *src)
+  {
+      //check inputs for NULL
+      if(dest == NULL || src == NULL)
+          return NULL;
 
-	while (dest[index++])
-		len1++;
+      int s1Length = strlen(dest);
+      int s2Length = strlen(src);
 
-	for (index = 0; src[index] && index < n; index++)
-		dest[len1++] = src[index];
+      //ensure strings do not overlap in memory
+      if(!(dest + s1Length < src || src + s2Length < dest))
+          return NULL;
 
-	return (dest);
-}
+      //append src to dest
+      //the "+ 1" here is necessary to copy the NULL from the end of __s2
+      for(int i = 0; i < s2Length + 1; i++)
+          result[s1Length + i] = srx[i];
+      return dest;
+  }
