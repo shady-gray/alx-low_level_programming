@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat -  a function that concatenates a destination string to
- * a source string with n chars.
- * @dest: destination string
- * @src: source string
- * @n: number of source chars to be concatenated
- *
- * Return: Always 0.
+ * _strncat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes used from src.
+ * Return: the pointer to dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
