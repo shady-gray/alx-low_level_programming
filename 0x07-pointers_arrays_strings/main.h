@@ -8,7 +8,8 @@
  *       used in the 0x06-pointers_arrays_strings directory.
  */
 
-#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
