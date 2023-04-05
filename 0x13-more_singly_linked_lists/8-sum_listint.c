@@ -8,7 +8,7 @@
  * Return: 0, if list is empty. data_sum of linked_t linked list if not empty
  * AUTHOR: BASIL BASSEY
  */
-int data_sum_listint(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	int s = 0;
 
