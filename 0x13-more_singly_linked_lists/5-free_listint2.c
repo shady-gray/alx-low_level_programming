@@ -2,7 +2,6 @@
 #include "lists.h"
 
 /**
- *
  * free_listint2 - a function that frees a lisint_t list
  * @head: Double pointer to list
  *
