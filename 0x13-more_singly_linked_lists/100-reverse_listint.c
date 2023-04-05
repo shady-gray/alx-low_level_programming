@@ -3,7 +3,7 @@
 /**
  * reverse_listint - a function that reverses a listint_t
  * @head: double pointer to head
- * 
+ *
  * Return: a pointer to the first node of the reversed list
  * AUTHOR: BASIL BASSEY
  */
