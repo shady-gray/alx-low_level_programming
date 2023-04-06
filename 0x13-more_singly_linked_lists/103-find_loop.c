@@ -12,7 +12,7 @@ listint_t *find_listint_loop(listint_t *head)
 	listint_t *o, *p;
 
 	o = p = head;
-	
+
 	while (p && p->next && o)
 	{
 		o = o->next;
@@ -25,7 +25,7 @@ listint_t *find_listint_loop(listint_t *head)
 		}
 	}
 
-	if (!p || !p->next || !o )
+	if (!p || !p->next || !o)
 		return (NULL);
 
 	while (o != p)
