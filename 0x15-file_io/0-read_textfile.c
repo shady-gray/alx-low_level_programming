@@ -3,9 +3,9 @@
  * read_textfiles - a function that reads a text file and prints it to the
  *                  POSIX standard output.
  * @filename: file pathname.
- * @letter: number of letters to read or print
+ * @letters: number of letters to read or print
  * 
- * Returns: actual number of letter it could read and print
+ * Return: actual number of letter it could read and print
  * AUTHOR: BASIL BASSEY
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -18,9 +18,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
     buff = malloc(sizeof(char) * letters);
     if (buff == NULL)
         return (0);
+
     file = open(filename, O_RDONLY);
     rd = read(file, buff, letters);
-    wr = write(STDOUT_FILENO, buff, letters);
+    wr = write(STDOUT_FILENO, buff, file);
     if (file == -1 || wr == -1 || rd == -1)
     {
         free(buff);
