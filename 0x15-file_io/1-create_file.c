@@ -12,13 +12,13 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t file, ln, wr;
+	int file, ln = 0, wr;
 
 	if (filename == NULL)
 		return (-1);
 	if (text_content == NULL)
 	{
-		for (ln = 0; text_content[ln]; len++)
+		for (ln = 0; text_content[ln]; ln++)
 			;
 	}
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
