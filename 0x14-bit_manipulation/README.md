@@ -3,7 +3,7 @@
 
 *In partial fulfillment to course requirements of the ALX Software Engineering Program, `alx-low_level_programming`.*
 
-![bitwise opeerations](./bitwise.png)
+![bitwise opeerations](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/232/bitwise.PNG)
 
 ## Resources
 **Read or watch**
