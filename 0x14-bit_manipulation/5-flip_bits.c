@@ -19,11 +19,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (y < (8 * sizeof(unsigned long int)))
 	{
 		if (res == (diff & res))
-		{
 			x++;
-			res <<= 1;
-			y++;
-		}
+		res <<= 1;
+		y++;
 	}
 	return (x);
 }
