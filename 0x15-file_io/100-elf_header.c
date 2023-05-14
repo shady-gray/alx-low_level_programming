@@ -39,7 +39,7 @@ void verify_elf(unsigned char *elf_num)
 			dprintf(STDERR_FILENO, "Error: FIle is not an ELF\n");
 			exit(98);
 		}
-	idx++
+	idx++;
 	}
 }
 
