@@ -3,7 +3,7 @@
 
 /**
  * print_dlistint - prints elements in list
- * @h: begunning of linked list
+ * @h: beginning of linked list
  *
  * Return: number of nodes
  */
